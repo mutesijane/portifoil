@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  color: hsl(229, 23%, 23% );
+}
+.main{
+  background-color: hsl(185, 75%, 39%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images-container {
+  position: fixed;
+}
+.top-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.bottom_image {
+  position: absolute;
+}
+.container {
+  z-index: 99;
+  background: hsl(0,0%,100%);
+  text-align: center;
+  max-width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.upper-container img{
+  height: 150px;
+  width: 350px;
+  background: cover;
+}
+.imag-sec img{
+  position: relative;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  border: 5px solid hsl(0,0%,100%);
+
+}
+.card-body{
+  margin-top: 54px;
+  margin-bottom: -75px;
+  height: 250px;
+  line-height: 29px;
+}
+.card-body .name{
+  font-size: 22px;
+}
+.card-body .city{
+  margin-top: 10px;
+}
+.card-body .age, .card-body .city{
+  font-weight: 300;
+  font-size: 16px;
+  color: hsl(0,0%,59%);
+}
+.activity-container .act{
+  display: block;
+  font-weight: 300;
+  font-size: 15px;
+  color: hsl(0,0%,59%);
+  letter-spacing: 2px;
+
+}
+.activity-container{
+  display: flex;
+  padding-top: 22px;
+  padding-right: 40px;
+  border-top: 1px solid hsl(0,10%,88%);
+  padding-left: 40px;
+  margin-top: 23px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* responsive */
+@media screen and (max-width:375px){
+  .container{
+    width: 90%;
+  }
+
+}
